@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Engagement Survey</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Family Survey Form</h1>
+        <p id="description">Thank you for taking the time to provide your feedback.</p>
+    </header>
+
+    <form id="survey-form" action="/tacos.html">
+        <div class="form-group">
+            <label for="name" id="name-label">Name</label>
+            <input name="name" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email</label>
+            <input name="email" id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="age" id="number-label">Age <small>(optional)</small></label>
+            <input name="age" id="number" type="number" placeholder="age" min="10" max="90">
+        </div>
+        <div class="form-group">
+            <label for="role">Which option best describes your relationship to your child?</label>
+            <select name="relationship" id="dropdown">
+                <option value="">Select one</option>
+                <option value="mother">Mother</option>
+                <option value="father">Father</option>
+                <option value="grandparent">Grandparent</option>
+                <option value="relative">Other Relative</option>
+                <option value="guardian">Guardian</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>How would you rate your school's communication practices?</p>
+            <label for="excellent"><input type="radio" name="communication-ratings" value="excellent">Excellent
+            </label>
+            <label for="satisfactory"><input type="radio" name="communication-ratings" value="satisfactory">Satisfactory
+            </label>
+            <label for="needs-improvement"><input type="radio" name="communication-ratings"
+                    value="needs-improvement">Needs Improvement
+            </label>
+        </div>
+        <div class="form-group">
+            <p>Which options do you use to get information about your
+                school/classroom?</p>
+            <label for="website"><input type="checkbox" name="communication-options" value="school-website">School
+                Website</label>
+            <label for="newsletter"><input type="checkbox" name="communication-options"
+                    value="classroom-newsletter">Classroom Newsletter</label>
+            <label for="school-facebook"><input type="checkbox" name="communication-options"
+                    value="school-facebook">School Facebook Page</label>
+            <label for="gradelevel-facebook"><input type="checkbox" name="comunication-options"
+                    value="gradelevel-facebook">Grade Level Facebook Page</label>
+        </div>
+        <div class="form-group">
+            <label for="feedback">Please share any feedback or suggestions here:</label>
+            <textarea id="feedback" name="feedback" placeholder="Enter your feedback here" rows="4"
+                cols="50"></textarea>
+        </div>
+        <button id="submit">Submit</button>
+    </form>
+</body>
+
+</html>
